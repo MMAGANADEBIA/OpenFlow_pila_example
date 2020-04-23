@@ -9,16 +9,35 @@
 </head>
 <body>
   <div class="data">
-    <label for="numero">Numero a agregar</label>
+    <label for="numero">Numero a agregar (final)</label>
     <input type="number" id="numero">
-    <button type="button" id="pushButton">push</button>
-  </div>
-  <div class="impresion">
+    <button type="button" id="pushButton">Push</button>
     <p id="impresionPila"></p>
   </div>
+  <div class="unshiftPila">
+    <label for="unshiftNumber">Numero a agregar (inicio)</label>
+    <input type="number" id="unshiftNumber">
+    <button type="button" id="unshiftButton">Unshift</button>
+    <p id="unshiftPila"></p>
+  </div>
   <div class="extraccion">
-    <button type="button" id="popButton">pop</button>
+    <button type="button" id="popButton">Pop</button>
     <p id="popPila"></p>
+  </div>
+  <div class="shiftDiv">
+    <button type="button" id="shiftButton">Shift</button>
+    <p id="shiftPila"></p>
+  </div>
+  <div class="sortPila">
+    <p>Sort 1 ordena los numeros de menor a mayor.</p>
+    <p>Sort 2 ordena los numeros de mayor a menor.</p>
+    <button type="button" id="sortButton">Sort 1</button>
+    <button type="button" id="sortIn">Sort 2</button>
+    <p id="sortPila"></p>
+  </div>
+  <div class="reversePila">
+    <button type="button" id="reverseButton">Reverse</button>
+    <p id="reversePila"></p>
   </div>
 </body>
 <script type="text/javascript" src="./main.js"></script>
