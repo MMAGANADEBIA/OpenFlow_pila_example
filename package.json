@@ -1,0 +1,24 @@
+{
+  "name": "heroku-server",
+  "version": "1.0.0",
+  "description": "Programa de ejemplo de funcionamiento de las pilas.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://MMAGANADEBIA@github.com/MMAGANADEBIA/OpenFlow_pila_example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MMAGANADEBIA/OpenFlow_pila_example/issues"
+  },
+  "homepage": "https://github.com/MMAGANADEBIA/OpenFlow_pila_example#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
