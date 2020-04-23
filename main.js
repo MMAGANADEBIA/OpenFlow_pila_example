@@ -6,24 +6,20 @@ function data(){ let numero = document.querySelector("#numero").value; add(numer
 
 function add(numero){
   pila.push(numero);
-  //console.log(pila);
   impresion(pila);
 }
 
 function impresion(pila){
-  //console.log(pila);
   let impresionPila = document.querySelector("#impresionPila");
   impresionPila.innerHTML = "pila = " + pila;
-  //return pila;
 }
 
 let popButton = document.querySelector("#popButton").addEventListener("click", popPila);
 
 function popPila(){
   let popPila = document.querySelector("#popPila");
-  pila.pop(); //pila.pop is not a function
+  pila.pop();
   popPila.innerHTML = "Fila despues de aplicarle pop = " + pila;
-  //console.log(pila)
 }
 
 let shiftButton = document.querySelector("#shiftButton").addEventListener("click", shiftPila);
@@ -58,11 +54,9 @@ function compareFunction2(a, b){
   return b - a;
 }
 
-//unshiftPila
 let unshiftButton = document.querySelector("#unshiftButton").addEventListener("click", data2);
 
 function data2(){
-  //let unshiftPila = document.querySelector("#unshiftPila");
   let unshiftNumber = document.querySelector("#unshiftNumber").value;
   impresionUnshift(unshiftNumber);
 }
@@ -80,17 +74,3 @@ function reversePila(){
   pila.reverse();
   reversePila.innerHTML = "Pila despues de aplicarle reverse = " + pila;
 }
-
-/*var btn = document.querySelector("#btn");  Primera version, duplicaba numeros
-btn.addEventListener("click", first);
-let firstInput = document.querySelector("#numero").value;
-
-let pila = [];
-
-function first(){
-
-  pila.push(firstInput);
-
-  console.log(pila);
-}
-*/
